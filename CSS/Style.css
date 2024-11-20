@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+  background-image: url(../Images/olia-gozha-J4kK8b9Fgj8-unsplash.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.font-edu{
+  font-family: "Edu AU VIC WA NT Pre", serif;
+  
+}
+h1{
+  font-size: 50px;
+  position: relative;
+}
+h1::after{
+  content: "";
+  position: absolute;
+  bottom: -5%;
+  left: 38%;
+  width: 1%;
+  height: 33%;
+  background-color:  rgba(0, 0, 0, 0.3);
+  animation: gonuts 2s linear infinite;
+
+}
+@keyframes gonuts {
+  0%{
+    h1::after{
+      left: 38%;
+      bottom: -5%;
+      width: 1%;
+      height: 33%;
+    }
+  }
+  25%{
+    h1::after{
+      left: 38%;
+      bottom: -5%;
+      width: 24.3%;
+      height: 33%;
+    }
+  }
+  50%{
+    left: 38%;
+    bottom: -5%;
+    width: 24.3%;
+    height: 100%;
+  }
+}
+.gradient-text {
+  background: linear-gradient(to right, blueviolet, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  background-clip: text; 
+  color: transparent;
+
+}
+.bg-white{
+  background-color: white;
+}
+.dottedline{
+  border-top: 2px dotted black;
+}
+.w-15{
+  width: 15%;
+}
+table {
+  width: 100%;
+
+}
+tr {
+  border-bottom: 1px solid #ddd; 
+}
+th, td {
+  text-align: center;
+  padding: 10px;
+}
+
+thead tr th {
+  width: 20%; 
+}
+@media only screen and (max-width: 640px){
+  h1::after{
+    left: 16.3%;
+    width: 70%;  
+  }
+}
