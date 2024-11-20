@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./CSS/Style.css">
 </head>
 <body>
+    <div class="container-fluid">
     <div class="container">
         <h1 class="mt-5 text-center font-edu">Bookmarker</h1>
         <p class="text-center text-muted font-edu fw-bold">All your important URLs in one place!</p>
@@ -40,21 +41,21 @@
         </div>
 
         <div class="text-center mt-5">
-            <button id="add" class="btn btn-secondary w-15 font-edu fw-medium" onclick="addUrl()">Save URL</button>
-            <button id="update" class="btn btn-warning w-15 font-edu fw-medium d-none" onclick="update()">Update URL</button>
+            <button id="add" class="btn btn-secondary w-15 w-s font-edu fw-medium" onclick="addUrl()">Save URL</button>
+            <button id="update" class="btn btn-warning w-15 w-s font-edu fw-medium d-none" onclick="update()">Update URL</button>
         </div>
 
     </div>
     
-    <div class="container dottedline mt-4">
-        <table class="mt-3 ">
+    <div class="container dottedline mt-4 table-responsive">
+        <table class="mt-3 table-sm ">
             <thead>
                 <tr class="bg-white">
-                <th class="font-edu fw-medium p-3"> Index</th>
-                <th class="font-edu fw-medium p-3">Website Name</th>
-                <th class="font-edu fw-medium p-3">Visit</th>
-                <th class="font-edu fw-medium p-3">Update</th>
-                <th class="font-edu fw-medium p-3">Delete</th>
+                <th class="col-2 font-edu fw-medium p-3"> Index</th>
+                <th class="col-2 font-edu fw-medium p-3">Website Name</th>
+                <th class="col-2 font-edu fw-medium p-3">Visit</th>
+                <th class="col-2 font-edu fw-medium p-3">Update</th>
+                <th class="col-2 font-edu fw-medium p-3">Delete</th>
                 </tr>
             </thead>
             <tbody id="allBookmarks">
@@ -62,7 +63,7 @@
             </tbody>
         </table>
     </div>
-    
+    </div>
     <script src="./JS/bootstrap.bundle.min.js"></script>
     <script src="./JS/index.js"></script>
 </body>
